@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiplayer Snake Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-900 text-white">
+    <div class="container mx-auto py-8">
+      <h1 class="text-4xl text-center mb-8">🐍 Multiplayer Snake 🐍</h1>
+
+      <div class="flex justify-center mb-4">
+        <div>
+          <h2 class="text-xl mb-2">Player 1 (WASD)</h2>
+          <div class="mb-8">Score: <span id="score1">0</span></div>
+        </div>
+        <div class="w-16"></div>
+        <div>
+          <h2 class="text-xl mb-2">Player 2 (Arrows)</h2>
+          <div class="mb-8">Score: <span id="score2">0</span></div>
+        </div>
+      </div>
+
+      <div class="flex justify-center">
+        <canvas id="gameCanvas" width="400" height="400" class="bg-gray-800"></canvas>
+      </div>
+
+      <div id="message" class="text-xl text-center mt-4"></div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
